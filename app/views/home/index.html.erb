@@ -2,8 +2,10 @@
 
 <%= link_to "New Expense", new_expense_path %></br>
 
+<% if user_signed_in?%>
 <%@expenses.each do |e|%>
 <%= e.name%>
 <%= e.cost%>
 </br>
+<%end%>
 <%end%>
