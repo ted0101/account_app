@@ -2,9 +2,8 @@
 
 <%= link_to "New Expense", new_expense_path %></br>
 
-
-<% @events.each do |event|%>
-<%= event.name %>
-<%= event.cost %>
+<%@expenses.each do |e|%>
+<%= e.name%>
+<%= e.cost%>
 </br>
 <%end%>
