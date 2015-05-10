@@ -1,0 +1,10 @@
+<h2>Hello</h2>
+
+<%= link_to "New Expense", new_expense_path %></br>
+
+
+<% @events.each do |event|%>
+<%= event.name %>
+<%= event.cost %>
+</br>
+<%end%>
